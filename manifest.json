@@ -3,6 +3,15 @@
   "name": "Hard Knocks isn't an accredited university",
   "version": "1.0",
   "description": "Sorry, folks. Hogwarts and the School of Hard Knocks aren't accredited learning institutions.",
-  "icons": ,
-  
+  "icons": {
+    "128": "images/diploma.jpeg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["scripts/script.js"],
+      "run_at": "document_end"
+    }
+  ]
+
 }
